@@ -1,6 +1,6 @@
 # gemini-viewer-ui
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an example of building User Interface based on [genimi-viewer](https://github.com/pattern-x/gemini-viewer).
 
 ## Available Scripts
 

@@ -1,6 +1,6 @@
 # gemini-viewer-ui
 
-This project was an example of building User Interface based on [genimi-viewer](https://github.com/pattern-x/gemini-viewer).
+This project is an example of building User Interface based on [genimi-viewer](https://github.com/pattern-x/gemini-viewer).
 
 ## Available Scripts
 

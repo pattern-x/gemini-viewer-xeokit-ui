@@ -1,113 +1,118 @@
 {
-  "name": "gemini-viewer-ui",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@ant-design/icons": "^4.7.0",
-    "@pattern-x/gemini-viewer": "^1.0.3",
-    "@reduxjs/toolkit": "^1.6.2",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.24",
-    "@types/node": "^12.20.33",
-    "@types/react": "^17.0.31",
-    "@types/react-dom": "^17.0.10",
-    "@types/react-router": "^5.1.17",
-    "@types/react-router-dom": "^5.3.1",
-    "antd": "^4.16.13",
-    "classnames": "^2.3.1",
-    "dat.gui": "^0.7.7",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-redux": "^7.2.5",
-    "react-router": "^5.2.1",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.4.4",
-    "web-vitals": "^1.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/dat.gui": "^0.7.7",
-    "@types/lodash": "^4.14.176",
-    "@types/react-redux": "^7.1.20",
-    "eslint": "^7.32.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "node-sass": "^6.0.1"
-  },
-  "rules": {
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "no-multi-spaces": 2,
-    "block-spacing": [
-      "error",
-      "always"
-    ],
-    "comma-spacing": [
-      "error",
-      {
-        "before": false,
-        "after": true
-      }
-    ],
-    "key-spacing": [
-      "error",
-      {
-        "beforeColon": false,
-        "afterColon": true
-      }
-    ],
-    "keyword-spacing": [
-      "error",
-      {
-        "before": true
-      }
-    ],
-    "arrow-spacing": [
-      "error",
-      {
-        "before": true,
-        "after": true
-      }
-    ],
-    "curly": [
-      "error",
-      "all"
-    ],
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto",
-        "printWidth": 128,
-        "tabWidth": 4,
-        "useTabs": false,
-        "semi": true,
-        "singleQuote": false,
-        "bracketSpacing": true
-      }
-    ]
-  }
+    "name": "gemini-viewer-ui",
+    "version": "0.1.0",
+    "private": true,
+    "main": "main.js",
+    "dependencies": {
+        "@ant-design/icons": "^4.7.0",
+        "@pattern-x/gemini-viewer": "^1.0.8",
+        "@reduxjs/toolkit": "^1.6.2",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^11.2.7",
+        "@testing-library/user-event": "^12.8.3",
+        "@types/node": "^12.20.33",
+        "@types/react": "^17.0.31",
+        "@types/react-dom": "^17.0.10",
+        "@types/react-router": "^5.1.17",
+        "@types/react-router-dom": "^5.3.1",
+        "antd": "^4.16.13",
+        "classnames": "^2.3.1",
+        "dat.gui": "^0.7.7",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.5",
+        "react-router": "^5.2.1",
+        "react-router-dom": "^5.3.0",
+        "react-scripts": "4.0.3",
+        "typescript": "^4.4.4",
+        "web-vitals": "^1.1.2"
+    },
+    "scripts": {
+        "electron": "electron .",
+        "dev": "electron . --debug | node scripts/start.js",
+        "pack": "electron-packager . --out ./out --overwrite",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/dat.gui": "^0.7.7",
+        "@types/lodash": "^4.14.176",
+        "@types/react-redux": "^7.1.20",
+        "electron": "^16.0.2",
+        "electron-packager": "^15.4.0",
+        "eslint": "^7.32.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "node-sass": "^6.0.1"
+    },
+    "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "no-multi-spaces": 2,
+        "block-spacing": [
+            "error",
+            "always"
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true
+            }
+        ],
+        "arrow-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto",
+                "printWidth": 128,
+                "tabWidth": 4,
+                "useTabs": false,
+                "semi": true,
+                "singleQuote": false,
+                "bracketSpacing": true
+            }
+        ]
+    }
 }

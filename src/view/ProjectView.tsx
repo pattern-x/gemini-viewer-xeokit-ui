@@ -22,8 +22,6 @@ export const ProjectView: React.FC = (): ReactElement => {
             const bimViewer = new BimViewer(
                 {
                     canvasId: "myCanvas",
-                    navCubeCanvasId: "myNavCubeCanvas",
-                    axisGizmoCanvasId: "myAxisGizmoCanvas",
                 },
                 project.camera
             );
@@ -104,23 +102,11 @@ export const ProjectView: React.FC = (): ReactElement => {
 
     return (
         <div>
-            <canvas
-                id="myCanvas"
-                className="canvas"
-                style={{
-                    width: "100%",
-                    height: "100%",
-                    position: "absolute",
-                }}
-            />
-            <canvas id="myNavCubeCanvas" />
-            <canvas id="mySectionPlanesOverviewCanvas" />
-            <canvas id="myAxisGizmoCanvas" />
+            <canvas id="myCanvas" className="canvas" />
             <div id="pivotMarker" className="camera-pivot-marker" />
             <div id="treeViewContainer" />
             <Viewpoints projectId={projectId} bimViewer={bimViewer} />
             <Annotations bimViewer={bimViewer} />
-            {/*<Properties ref="properties" /> */}
         </div>
     );
 };
